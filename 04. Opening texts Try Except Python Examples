@@ -1,0 +1,9 @@
+#this program tries to open a file called MyTextFile.txt but, because of there is no opening mode provided, there is an error so the except
+#statement will be executed
+try:
+	file = open('myTextFile.txt','w')
+	file.write('Computer Science')
+except:
+	print("There has been an error when writing to the file.")
+finally:
+	print("The program has been finalised.")
