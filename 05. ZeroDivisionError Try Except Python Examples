@@ -1,0 +1,9 @@
+#this code will be executed but, in case number2 takes the value 0, there will be an error called ZeroDivisionError and the except
+#part of the code will be executed
+
+try:
+	number1 = int(input("Enter a number:"))
+	number2 = int(input("Enter a number: "))
+	division = number1/number2
+except ZeroDivisionError:
+	print("There is an error. The denominator is 0")
