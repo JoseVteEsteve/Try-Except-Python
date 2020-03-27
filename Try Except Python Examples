@@ -1,0 +1,12 @@
+#this program tries to print the variable x but an error arises so except statement is executed
+try:
+	print(x)
+except:
+	print("An error has ocurred")
+
+#this program tries to do the same but a new variable called Error is defined and then printed
+try:
+	print(x)
+except:
+	Error = "name \'x\' is not defined"
+	print(Error)
