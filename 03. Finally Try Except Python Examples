@@ -1,0 +1,7 @@
+# finally block is executed regardless if the try block raises an error or not
+try:
+	print(x)
+except NameError:
+	print("Variable x is not defined")
+finally:
+	print("The code has been finalised")
