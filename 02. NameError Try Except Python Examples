@@ -1,0 +1,19 @@
+#this program tries to print x but in case NameError arises, appears "Variable is not defined" and in case there is another type of error
+#another statement "The program contains an error" is executed. Because only NameError arises, the except statement is not executed.
+try:
+	print(x)
+except NameError:
+	print("Variable x is not defined")
+except:
+	print("The program contains an error")
+
+
+#this program tries to print x but in case NameError arises the except statement is executed.
+#else sentence is executed if no error has been found in the try code
+try:
+	print(x)
+except NameError:
+	print("Variable x is not defined")
+else:
+	#this statement will be executed if no error has been found in the code
+	print("The program has been executed correctly")
