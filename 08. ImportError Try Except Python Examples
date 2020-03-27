@@ -1,0 +1,8 @@
+#this code tries to import a library from Python, but due to the library is bad-written the exception part of the code is executed
+
+try:
+	import mathg
+	x = mathg.sqrt(34)
+	print(x)
+except ImportError:
+	print("The module has been incorrectly imported.")
