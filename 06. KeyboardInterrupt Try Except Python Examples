@@ -1,0 +1,8 @@
+#this code will be executed but, in case there is an error in the keybord (interruption) using Control + C, the program will continue
+#executing the exception handling statement
+
+try:
+  name = input("What is your name?")
+  print("Your name is: ",name)
+except KeyboardInterrupt:
+  print("You pressed Control + C")
